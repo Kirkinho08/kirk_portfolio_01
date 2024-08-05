@@ -1,0 +1,18 @@
+.home {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent; /* Ensure the background is transparent */
+  z-index: 2; /* Ensure it is above the particles background */
+  margin-top: -12rem;
+  padding-top: 0;
+}
+
+.home-content {
+  position: absolute;
+  pointer-events: auto; /* Re-enable pointer events for the content */
+  text-align: center;
+  color: white;
+}

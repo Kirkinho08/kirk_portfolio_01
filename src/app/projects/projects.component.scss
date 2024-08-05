@@ -1,0 +1,41 @@
+.projects {
+  padding: 2rem;
+}
+
+.card {
+  background-color: #005f73;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.btn-primary {
+  background-color: #001013;
+  border-color: #005f73;
+  &:hover {
+    background-color: #0a9396;
+    border-color: #0a9396;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+
+

@@ -1,0 +1,22 @@
+.skills {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+  color: white;
+}
+
+.list-group-item {
+  margin: 0.5rem 0;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}

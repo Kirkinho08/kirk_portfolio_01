@@ -1,0 +1,31 @@
+<div id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="container">
+    <div class="row" *ngFor="let project of projects">
+      <div class="col-12">
+        <div class="card mb-4">
+          <div id="carousel{{ project.id }}" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item" *ngFor="let screenshot of project.screenshots; let i = index" [ngClass]="{ 'active': i === 0 }">
+                <img [src]="screenshot" class="d-block w-100" alt="Screenshot">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel{{ project.id }}" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel{{ project.id }}" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ project.name }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <a [href]="project.link" class="btn btn-primary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
